@@ -27,6 +27,7 @@ class RdeiscesApplicationTests {
         var jsonuser = new ObjectMapper().writeValueAsString(user);
         redisTemplate.opsForValue().set("user",jsonuser);
         System.out.println(redisTemplate.opsForValue().get("user"));
+        System.out.println(redisTemplate.opsForValue().get("user1"));
 
     }
 
